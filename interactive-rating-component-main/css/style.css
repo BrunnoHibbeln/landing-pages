@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(212, 22%, 13%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    background-color: var(--Very-Dark-Blue);
+}
+
+body p {
+    Font-size: 13px;
+    color: var(--Medium-Grey);
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+body h1 {
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--White);
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+
+.star {
+    position: relative;
+    background-color: hsl(215, 21%, 17%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.star img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -7px;
+    margin-top: -7.5px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 385px;
+    height: 385px;
+    margin-left: -192.5px;
+    margin-top: -192.5px;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: var(--Dark-Blue);
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a {
+    color: var(--Medium-Grey);
+    background-color: hsl(215, 21%, 17%);
+    padding: 16px 19px;
+    border-radius:50%;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+
+.buttons a:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.buttons a:active {
+    background-color: var(--Medium-Grey);
+    color: var(--White);
+}
+
+.button {   
+    margin-top: 25px;
+    padding: 13px;
+    width: 100%;
+    border-style: none;
+    border-radius: 30px;
+    color: var(--White);
+    background-color: var(--Orange);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
