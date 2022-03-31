@@ -121,7 +121,7 @@ body {
 }
 
 .ranking .buttons {
-    padding: 16px 19px;
+    padding: 13px 16px;
     border-radius: 50%;
     list-style: none;
     font-size: 13px;
@@ -160,4 +160,70 @@ body {
 .submitButton:hover {
     color: var(--Orange);
     background-color: var(--White)
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 330px;
+        height: 340px;
+        margin-left: -165px;
+        margin-top: -170px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .container p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .containerThankYou {
+        width: 330px;
+        height: 340px;
+        margin-left: -165px;
+        margin-top: -170px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .containerThankYou h1 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .containerThankYou p {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .star {
+        width: 40px;
+        height: 40px;
+    }
+
+    .star img {
+        width: 13px;
+        height: 13px;
+        margin-left: -6px;
+        margin-top: -6.5px;
+    }
+
+    .imgThanks img {
+        width: 135px;
+        margin-bottom: 30px;
+    }
+
+    .selection {
+        padding: 5px 13px;
+        border-radius: 30px;
+        width: 190px;
+        font-size: 12px;
+        background-color: hsl(215, 21%, 17%);
+        color: var(--Orange);
+    }
 }
