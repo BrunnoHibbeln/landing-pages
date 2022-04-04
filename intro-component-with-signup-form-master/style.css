@@ -109,6 +109,11 @@ body {
     margin-bottom: 20px;
 }
 
+.sign-up form button:hover {
+    background-color: hsl(154, 74%, 56%);
+    cursor: pointer;
+}
+
 .sign-up form p {
     text-align: center;
     font-size: 11px;
