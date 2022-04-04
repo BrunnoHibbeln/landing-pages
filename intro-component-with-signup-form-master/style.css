@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    box-shadow: 0px 10px rgba(0, 0, 0, 0.164);
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.164);
     margin-bottom: 20px
 }
 
@@ -74,6 +74,8 @@ body {
 .sign-up form {
     background-color: white;
     padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.164);
 }
 
 .sign-up form input {
@@ -82,10 +84,11 @@ body {
     padding: 20px 30px;
     border-radius: 5px;
     border-style: none;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.548);
     margin-bottom: 20px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
+    color: var(--Dark-Blue);
 }
 
 .sign-up form input:focus {
@@ -95,7 +98,25 @@ body {
 
 .sign-up form button {
     background-color: var(--Green);
+    color: white;
     width: 100%;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-weight: 700;
     border-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px hsl(154, 55%, 39%);
+    margin-bottom: 20px;
+}
 
+.sign-up form p {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    word-spacing: -1.5px;
+    color: gray;
+}
+
+.sign-up form p span {
+    color: red;
 }
