@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<title>Intro component with sign up form</title>
 </head>
@@ -20,24 +20,31 @@
 
 	<div class="sign-up">
 		<div>
-				<span> <strong>Try it free 7 days</strong> then $20/mo. thereafter</span> 
+			<span> <strong>Try it free 7 days</strong> then $20/mo. thereafter</span> 
 		</div>
-		<form>
-				<input type="text" id="first-name" placeholder="First Name">
-				
-				<input type="text" id="last-name" placeholder="Last Name">
-				
-				<input type="text" id="email" placeholder="Email Address">
+		<form action="#">
+			<input class="input" type="text" id="first-name" placeholder="First Name">
+			<span class="span hidden">First name cannot be empty</span>
 
-				<input type="password" id="password" placeholder="Password">
+			<input class="input" type="text" id="last-name" placeholder="Last Name">
+			<span class="span hidden">Last name cannot be empty</span>
 
-				<button type="submit">Claim your free trial</button>
-				<p>
-					By clicking the button, you are agreeing to our <span>Terms and Services</span>
-				</p>
+			<input class="input" type="text" id="email" placeholder="Email Address">
+			<span class="span hidden">Looks like this is not an email</span>
+
+			<input class="input" type="password" id="password" placeholder="Password">
+			<span class="span hidden">Password cannot be empty</span>
+
+			<button id="button" type="submit">Claim your free trial</button>
+			<p>
+				By clicking the button, you are agreeing to our <span>Terms and Services</span>
+			</p>
 		</form>
 	</div>
 
   </section>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
