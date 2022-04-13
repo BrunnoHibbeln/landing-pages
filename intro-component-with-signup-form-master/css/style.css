@@ -21,7 +21,7 @@ body {
 
 .container {
     background-color: var(--Red);
-    background-image: url(images/bg-intro-desktop.png);
+    background-image: url(../images/bg-intro-desktop.png);
     background-size: cover;
     height: 100vh;
     padding: 50px 130px;
@@ -73,30 +73,74 @@ body {
 
 .sign-up form {
     background-color: white;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     border-radius: 10px;
     box-shadow: 0px 7px rgba(0, 0, 0, 0.164);
+    text-align: right;
 }
 
-.sign-up form input {
+.sign-up form .input {
     font-family: 'Poppins', sans-serif;
+    position: relative;
     width: 100%;
     padding: 20px 30px;
     border-radius: 5px;
     border-style: none;
     border: 1px solid rgba(128, 128, 128, 0.548);
-    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 14px;
     font-weight: 700;
     color: var(--Dark-Blue);
 }
 
-.sign-up form input:focus {
+.sign-up form .input:before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url("../images/icon-error.svg");
+    background-color: black;
+  }
+
+.sign-up form .input:focus {
     border: 1px solid var(--Blue);
     outline: none;
 }
 
-.sign-up form button {
+.sign-up form .inputError:focus {
+    border: 1px solid var(--Blue);
+    outline: none;
+    color: var(--Dark-Blue);                                                       
+}
+
+.inputError {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border-style: none;
+    border: 2px solid var(--Red);
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Red);
+}
+
+.sign-up form .span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--Red)
+}
+
+.hidden {
+    display: none;
+}
+
+.sign-up form #button {
     background-color: var(--Green);
     color: white;
     width: 100%;
@@ -107,9 +151,10 @@ body {
     border-radius: 5px;
     box-shadow: 0px 4px hsl(154, 55%, 39%);
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.sign-up form button:hover {
+.sign-up form #button:hover {
     background-color: hsl(154, 74%, 56%);
     cursor: pointer;
 }
@@ -123,5 +168,5 @@ body {
 }
 
 .sign-up form p span {
-    color: red;
+    color: var(--Red);
 }
